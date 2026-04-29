@@ -1,4 +1,4 @@
-package com.security.MovieConfiguration;
+package com.security.movieConfiguration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Configuration
-public class Config {
+public class MovieConfig {
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();
@@ -16,6 +16,6 @@ public class Config {
 
     @Bean
     public ExecutorService executorService() {
-        return Executors.newFixedThreadPool(30);
+        return Executors.newFixedThreadPool(10);
     }
 }
