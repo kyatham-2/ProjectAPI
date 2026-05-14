@@ -1,7 +1,7 @@
-package com.security.movieController;
-import com.security.movieDTO.MovieModel;
-import com.security.movieDTO.ResponseModel;
-import com.security.movieService.MovieService;
+package com.security.moviesearchapi.controller;
+import com.security.moviesearchapi.dto.MovieModel;
+import com.security.moviesearchapi.dto.ResponseModel;
+import com.security.moviesearchapi.service.MovieService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

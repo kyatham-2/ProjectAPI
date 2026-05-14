@@ -1,4 +1,4 @@
-package com.security.movieDTO;
+package com.security.moviesearchapi.dto;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
