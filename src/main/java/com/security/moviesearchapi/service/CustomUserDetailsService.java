@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CustomUserDetailsService{
+public class CustomUserDetailsService implements UserDetailsService {
 
     private final UserRepository repository;
 
@@ -19,6 +19,7 @@ public class CustomUserDetailsService{
         this.repository = repository;
     }
 
+    @Override
     public UserDetails loadUserByUsername(
             String username)
             throws UsernameNotFoundException {
